@@ -1,0 +1,14 @@
+{
+  "include": [
+    "src",
+  ],
+  "compilerOptions": {
+    "outDir": "js",
+    "target": "ES2017",
+    "lib": [
+      "ES2017",
+      "DOM"
+    ],
+    "strict": true
+  }
+}
