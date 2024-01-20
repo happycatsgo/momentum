@@ -5,7 +5,7 @@ const loginForm = document.querySelector("#login-form");
 function paintGreetings(name) {
     const greeting = document.querySelector("#greeting");
     if (greeting instanceof HTMLElement) {
-        greeting.innerText = `Hello ${name} !`;
+        greeting.innerText = `Hello ${name}`;
         greeting.classList.remove(HIDDEN_CLASS);
     }
 }
