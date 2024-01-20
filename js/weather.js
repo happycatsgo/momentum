@@ -9,7 +9,6 @@ function onGeoOk(position) {
         .then((data) => {
         const location = document.querySelector("#weather span:first-child");
         const weather = document.querySelector("#weather span:last-child");
-        console.log(data.name, data.weather[0].main);
         if (location instanceof HTMLElement) {
             location.innerText = data.name;
         }
