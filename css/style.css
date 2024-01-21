@@ -1,9 +1,10 @@
 body {
   background-size : cover;
-  width: 100vw;
-  height: 100vh;
+  width: 95vw;
+  height: 97vh;
   font-family:Arial, Helvetica, sans-serif;
   color: white;
+  font-size: 20px;
 }
 
 h1 {
@@ -16,6 +17,19 @@ h2 {
   font-weight: normal;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
 .hidden {
   display: none;
 }
@@ -26,6 +40,19 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+#quote {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+#weather {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 #login-form input {
@@ -43,3 +70,19 @@ h2 {
     opacity: 0.5;
   }
 }
+
+#todo-form input {
+  width: 250px;
+  height: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom : 2px solid white;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  &::placeholder {
+    color: white;
+  }
+}
+
